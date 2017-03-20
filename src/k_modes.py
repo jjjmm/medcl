@@ -1,5 +1,5 @@
 from kmodes import kmodes
-from util import print_util, data_util
+from src.util import print_util, data_util
 
 
 def k_modes(cluster_amount, data):
@@ -17,11 +17,6 @@ def as_dict(data, clusters, cluster_indices):
                 data_array.append(list(map(str, d.tolist())))
         data_dict[cluster_index] = data_array
     return data_dict
-
-
-# todo implement string correlation, corr coefficient
-def filter_by_correlation_coefficient(data):
-    pass
 
 
 def k_modes_dict(cluster_amount, data_path, max_rows=10, max_columns=10, verbose=True):

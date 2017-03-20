@@ -1,5 +1,5 @@
 import pyfpgrowth
-from util import decorators
+from src.util import decorators
 
 
 @decorators.measure_time

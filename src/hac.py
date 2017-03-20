@@ -1,6 +1,6 @@
 """Hierarchical Agglomerative Clustering"""
 
-from util import visualization_util
+from src.util import visualization_util
 from scipy.cluster.hierarchy import linkage
 
 

@@ -13,6 +13,6 @@ def fp_growth_as_dict(k_modes_cluster_dict, min_support):
 
 def log_fp_growth_dict(patterns):
     for cluster_id, value_frequency_dict in patterns.items():
-        print(colored('\nfp-growth. cluster: {}'.format(cluster_id), 'green'))
+        print(colored('fp-growth. cluster: {}'.format(cluster_id), 'green'))
         for value, frequency in value_frequency_dict.items():
             print(str(value) + ' ' + str(frequency))

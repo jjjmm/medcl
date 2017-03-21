@@ -16,7 +16,7 @@ def get_array_from_csv(path, keep_names=None, delimiter=','):
 def get_dataframe(data_path, max_rows, max_columns, with_namespaces=True):
     df = pd.read_csv(data_path)
     data_with_ids = df.ix[0:max_rows - 1, 0:max_columns - 1]
-    if(with_namespaces):
+    if with_namespaces:
         for column in data_with_ids:
             data_with_ids[column] = str(column) + ':' + data_with_ids[column].astype(str)
     return data_with_ids

@@ -1,13 +1,11 @@
-from k_modes import k_modes
-from util import constants
-from validation import fp_growth
+from src import k_modes, fp_growth
+from src.util import constants, data_util
 
-k_modes_cluster_dict = k_modes.k_modes_dict(cluster_amount=3, data_path=constants.SORTED_MED_DATA_MIN_PATH, max_rows=150, max_columns=10)
-fp_growth.fp_growth(k_modes_cluster_dict, min_support=20)
+df_with_ids = data_util.get_dataframe(constants.SORTED_MED_DATA_MIN_PATH, 150, 10)
+df_no_ids = df_with_ids.iloc[:, 2:]
 
-# hac
-# generated_data = data_util.generate_dummy(element_amount=40, dimensions=2, seed=24)
-# hac.cluster(generated_data)
-# sorted_med_data = data_util.get_array_from_csv(constants.SORTED_MED_DATA_MIN_PATH)
-# numeric_columns_of_sorted_med_data = np.char.decode(sorted_med_data[1:, 1:4], encoding='UTF-8')
-# hac.cluster_with_dendrogram(numeric_columns_of_sorted_med_data)
+k_modes_cluster_dict = k_modes.k_modes_dict(cluster_amount=3, dataframe=df_no_ids)
+k_modes.log_k_modes_dict(k_modes_cluster_dict)
+
+fp_growth_patterns = fp_growth.fp_growth_as_dict(k_modes_cluster_dict, min_support=20)
+fp_growth.log_fp_growth_dict(fp_growth_patterns)

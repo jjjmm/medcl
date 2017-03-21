@@ -1,15 +1,15 @@
 import numpy as np
 import pandas as pd
-import scipy.stats as scis
+import scipy.stats as ss
 
 
 def cramers_stat(confusion_matrix):
-    chi2 = scis.chi2_contingency(confusion_matrix, correction=False)[0]
+    chi2 = ss.chi2_contingency(confusion_matrix, correction=False)[0]
     n = confusion_matrix.as_matrix().sum()
     return np.sqrt(chi2 / (n * (min(confusion_matrix.shape) - 1)))
 
 
-def print_by_cramers_index(dataframe, matrix, min_index=0, max_index=1):
+def print_by_cramers_index(dataframe, min_index=0, max_index=1):
     for x_column in dataframe:
         for y_column in dataframe:
             if x_column != y_column:

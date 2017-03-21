@@ -1,5 +1,5 @@
 from kmodes import kmodes
-from src.util import print_util, data_util
+from termcolor import colored
 
 
 def k_modes(cluster_amount, data):
@@ -19,17 +19,14 @@ def as_dict(data, clusters, cluster_indices):
     return data_dict
 
 
-def k_modes_dict(cluster_amount, data_path, max_rows=10, max_columns=10, verbose=True):
+def k_modes_dict(cluster_amount, dataframe):
     """returns a dict with cluster id as key and data as value"""
-    data_with_ids = data_util.get_dataframe(data_path, max_rows, max_columns)
-    data_without_ids = data_with_ids.ix[:, 2:].as_matrix()
-    clusters = k_modes(cluster_amount, data_without_ids)
-    if (verbose):
-        print_k_modes_data(clusters, data_with_ids, data_without_ids)
-    return as_dict(data_without_ids, clusters.labels_, cluster_amount - 1)
+    data_matrix = dataframe.as_matrix()
+    clusters = k_modes(cluster_amount, data_matrix)
+    return as_dict(data_matrix, clusters.labels_, cluster_amount - 1)
 
 
-def print_k_modes_data(clusters, data_with_ids, data_without_ids):
-    print_util.print_pair('data with ids', data_with_ids)
-    print_util.print_pair('data without ids', data_without_ids)
-    print_util.print_pair('clusters', clusters.labels_)
+def log_k_modes_dict(k_modes_cluster_dict):
+    print(colored('k-modes stats:', 'green'))
+    for key, value in k_modes_cluster_dict.items():
+        print('cluster {} contains {} data points'.format(str(key), len(value)))

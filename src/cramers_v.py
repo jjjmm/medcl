@@ -9,11 +9,15 @@ def cramers_stat(confusion_matrix):
     return np.sqrt(chi2 / (n * (min(confusion_matrix.shape) - 1)))
 
 
-def print_by_cramers_index(dataframe, min_index=0, max_index=1):
+def get_unique_pairs_by_cramers_coef(dataframe, min_coef=0, max_coef=1, verbose=True):
+    result = []
     for x_column in dataframe:
         for y_column in dataframe:
             if x_column != y_column:
                 confusion_matrix = pd.crosstab(dataframe[str(x_column)], dataframe[str(y_column)])
-                result = cramers_stat(confusion_matrix)
-                if not (np.math.isnan(result)) and min_index < result < max_index:
-                    print(str(x_column) + '-' + str(y_column) + ':' + str(result))
+                cramers_coef = cramers_stat(confusion_matrix)
+                if not (np.math.isnan(cramers_coef)) and min_coef <= cramers_coef <= max_coef:
+                    result.append([x_column, y_column])
+                    if verbose:
+                        print('{}) {}-{} : {}'.format(len(result), x_column, y_column, cramers_coef))
+    return result

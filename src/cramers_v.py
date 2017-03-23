@@ -9,6 +9,7 @@ def cramers_stat(confusion_matrix):
     return np.sqrt(chi2 / (n * (min(confusion_matrix.shape) - 1)))
 
 
+# todo optimize
 def get_unique_pairs_by_cramers_coef(dataframe, min_coef=0, max_coef=1, verbose=True):
     result = []
     for x_column in dataframe:

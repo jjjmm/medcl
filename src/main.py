@@ -1,8 +1,7 @@
 from src import k_modes, fp_growth, cramers_v
 from src.util import constants, data_util, decorators
 
-df_with_ids = data_util.get_dataframe(constants.SORTED_MED_DATA_MIN_PATH, 150, 402)
-# todo drop cimplitely duplicate columns before cramer df_with_ids.T.drop_duplicates().T
+df_with_ids = data_util.get_dataframe(constants.SORTED_MED_DATA_MIN_PATH, 150, 402, with_namespaces=True)
 df_no_ids = df_with_ids.iloc[:, 2:]
 
 

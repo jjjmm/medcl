@@ -13,7 +13,7 @@ def get_array_from_csv(path, keep_names=None, delimiter=','):
     return np.genfromtxt(path, delimiter=delimiter, dtype=None, names=keep_names)
 
 
-def get_dataframe(data_path, max_rows, max_columns, with_namespaces=True, drop_duplicates=True):
+def get_dataframe(data_path, max_rows, max_columns, with_namespaces=False, drop_duplicates=False):
     df = pd.read_csv(data_path)
     reduced_data = df.ix[0:max_rows - 1, 0:max_columns - 1]
     if drop_duplicates:

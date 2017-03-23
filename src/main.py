@@ -1,11 +1,14 @@
 from src import k_modes, fp_growth, cramers_v
 from src.util import constants, data_util, decorators
 
-df_with_ids = data_util.get_dataframe(constants.SORTED_MED_DATA_MIN_PATH, 150, 402, with_namespaces=True)
+columns = 102
+rows = 152
+df_with_ids = data_util.get_dataframe(constants.SORTED_MED_DATA_MIN_PATH, max_rows=rows, max_columns=columns,
+                                      with_namespaces=True, drop_duplicates=True)
 df_no_ids = df_with_ids.iloc[:, 2:]
 
 
-def get_duplicate_columns(pairs):
+def get_columns_to_remove(pairs):
     unique_columns = []
     for pair in pairs:
         if pair[0] not in unique_columns:
@@ -14,15 +17,14 @@ def get_duplicate_columns(pairs):
 
 
 @decorators.measure_time
-def preprocess():
+def preprocess(dataframe):
     # remove V13, since every value in this column is unique and it generates cr. coef 1.0 with eac column
-    df_no_ids_and_V13 = df_no_ids.drop('V13', 1)
-    """discovering complete duplicates with cramer's coefficient = 1.0
-        327 pairs 1.0 (100 dimensions)
-        555 pairs 1.0 (200 dimensions)"""
-    duplicate_pairs = cramers_v.get_unique_pairs_by_cramers_coef(dataframe=df_no_ids_and_V13, min_coef=1, max_coef=1)
-    print(get_duplicate_columns(duplicate_pairs))
-    print(len(get_duplicate_columns(duplicate_pairs)))
+    df_no_ids_and_V13 = dataframe.drop('V13', 1)
+    ctx_duplicate_columns = cramers_v.get_column_pairs_by_cramers_coef(dataframe=df_no_ids_and_V13, min_coef=0.9, max_coef=1)
+    columns_to_remove = get_columns_to_remove(ctx_duplicate_columns)
+    print(columns_to_remove)
+    df_no_ctx_duplicates = df_no_ids_and_V13.drop(columns_to_remove, axis=1)
+    df_no_ctx_duplicates.to_csv(constants.DATA + 'no_ctx_duplicates_' + str(columns) + '.csv')
 
 
 def cluster_and_validate():
@@ -32,4 +34,4 @@ def cluster_and_validate():
     fp_growth.log_fp_growth_dict(fp_growth_patterns)
 
 
-preprocess()
+preprocess(df_no_ids)

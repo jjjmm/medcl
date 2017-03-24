@@ -19,6 +19,6 @@ def get_dataframe(data_path, max_rows, max_columns, with_namespaces=False, drop_
     if drop_duplicates:
         reduced_data = reduced_data.T.drop_duplicates().T
     if with_namespaces:
-        for column in reduced_data:
+        for column in reduced_data.ix[:, 1:]:
             reduced_data[column] = str(column) + ':' + reduced_data[column].astype(str)
     return reduced_data

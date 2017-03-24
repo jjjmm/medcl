@@ -3,7 +3,7 @@ from termcolor import colored
 
 
 def k_modes(cluster_amount, data):
-    km = kmodes.KModes(n_clusters=cluster_amount, init='Huang', n_init=1, verbose=1)
+    km = kmodes.KModes(n_clusters=cluster_amount, init='Huang', n_init=50, verbose=0)
     return km.fit(data)
 
 
@@ -19,10 +19,10 @@ def as_dict(data, clusters, cluster_indices):
 
 
 def k_modes_dict(cluster_amount, dataframe):
-    """returns a dict with cluster id as key and data as value"""
-    data_matrix = dataframe.as_matrix()
+    df_no_ids = dataframe.iloc[:, 1:]
+    data_matrix = df_no_ids.as_matrix()
     clusters = k_modes(cluster_amount, data_matrix)
-    return as_dict(data_matrix, clusters.labels_, cluster_amount)
+    return as_dict(dataframe.as_matrix(), clusters.labels_, cluster_amount)
 
 
 def log_k_modes_stats(k_modes_cluster_dict):

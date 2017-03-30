@@ -1,6 +1,7 @@
 from src import k_modes, fp_growth, cramers_v
 from src.util import constants, data_util, decorators
 import numpy as np
+import pandas as pd
 
 columns = 52
 rows = 152
@@ -37,7 +38,7 @@ def validate(k_modes_cluster_dict):
 
 
 def cluster(dataframe):
-    k_modes_cluster_dict = k_modes.k_modes_dict(cluster_amount=5, dataframe=dataframe)
+    k_modes_cluster_dict = k_modes.k_modes_dict(cluster_amount=3, dataframe=dataframe)
     k_modes.log_k_modes_stats(k_modes_cluster_dict)
     return k_modes_cluster_dict
 
@@ -76,6 +77,14 @@ def cluster_stat(runs):
     print('mean clustering equality in {} runs: {}'.format(runs, np.mean(global_clustering_mean)))
 
 
-cluster_stat(10)
-cluster_stat(20)
-cluster_stat(30)
+def cluster_and_export():
+    result = cluster(data_util.get_dataframe(constants.DATA + 'no_ctx_duplicates_52.csv', max_rows=rows, max_columns=columns))
+    for index, (key, value) in enumerate(result.items()):
+        df = pd.DataFrame(value)
+        df.to_csv(constants.CLUSTER_OUT + 'cluster_' + str(index+1) + '.csv', index=False, header=False)
+
+
+cluster_and_export()
+# cluster_stat(10)
+# cluster_stat(20)
+# cluster_stat(30)

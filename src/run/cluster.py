@@ -81,10 +81,9 @@ def cluster_and_export():
     result = cluster(data_util.get_dataframe(constants.DATA + 'no_ctx_duplicates_52.csv', max_rows=rows, max_columns=columns))
     for index, (key, value) in enumerate(result.items()):
         df = pd.DataFrame(value)
-        df.to_csv(constants.CLUSTER_OUT + 'cluster_' + str(index+1) + '.csv', index=False, header=False)
+        df.to_csv(constants.CLUSTER_OUT + 'cluster_' + str(index + 1) + '.csv', index=False, header=False)
 
-
-cluster_and_export()
+# cluster_and_export()
 # cluster_stat(10)
 # cluster_stat(20)
 # cluster_stat(30)

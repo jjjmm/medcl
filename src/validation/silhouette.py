@@ -28,12 +28,12 @@ def k_modes_silhouette_visualize(rows, columns, min_cluster_amount, max_cluster_
         silhouette_scores = k_modes_silhouette(dataframe, num_of_clusters)
         cluster_amounts.append(num_of_clusters)
         silhouette_coefficients.append(np.mean(silhouette_scores))
-    silhouette.v(cluster_amounts, silhouette_coefficients, title)
+    silhouette.visualize(cluster_amounts, silhouette_coefficients, title)
 
 
 def k_modes_silhouette(dataframe, num_of_clusters):
     clusters = k_modes(num_of_clusters, dataframe.iloc[:, 1:].as_matrix())
     distance_matrix = simple_matching.get_dissimilarity_matrix(dataframe)
     silhouette_samples = silhouette.precomputed_silhouette(distance_matrix, clusters.labels_)
-    print('for {} clusters silhouette score is: {}'.format(num_of_clusters + 2, round(np.mean(silhouette_samples), 3)))
+    print('for {} clusters silhouette score is: {}'.format(num_of_clusters, round(np.mean(silhouette_samples), 3)))
     return silhouette_samples

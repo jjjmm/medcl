@@ -13,8 +13,8 @@ def get_array_from_csv(path, keep_names=None, delimiter=','):
     return np.genfromtxt(path, delimiter=delimiter, dtype=None, names=keep_names)
 
 
-def get_dataframe(data_path, max_rows, max_columns, with_namespaces=False, drop_duplicates=False):
-    df = pd.read_csv(data_path)
+def get_dataframe(data_path, max_rows=1000, max_columns=1000, with_namespaces=False, drop_duplicates=False, header=0):
+    df = pd.read_csv(data_path, header=header)
     reduced_data = df.ix[0:max_rows - 1, 0:max_columns - 1]
     if drop_duplicates:
         reduced_data = reduced_data.T.drop_duplicates().T

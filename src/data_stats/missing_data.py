@@ -1,20 +1,16 @@
-from src.util import data_util, constants
+from src.util import calc_util,data_util, constants
 
 
 def percentage_nan(dataframe, whole=150, min_percentage=0, max_percentage=100):
-    return ((min_percentage < percentage(dataframe, whole)) &
-            (max_percentage >= percentage(dataframe, whole))).sum()
+    return ((min_percentage < calc_util.percentage(dataframe, whole)) &
+            (max_percentage >= calc_util.percentage(dataframe, whole))).sum()
 
 
 def percentage_nan_equals(dataframe, max_rows=150, equal_percentage=100):
-    return (equal_percentage == percentage(dataframe, max_rows)).sum()
+    return (equal_percentage == calc_util.percentage(dataframe, max_rows)).sum()
 
 
-def percentage(part, whole):
-    return part / whole * 100
-
-
-df = data_util.get_dataframe(constants.DATA + 'original_150_allstring.csv', header=None)
+df = data_util.get_dataframe(constants.DATA + 'original_with_headers_150.csv', header=0)
 max_columns = df.shape[1]
 max_rows = df.shape[0]
 overall = max_columns * max_rows
@@ -60,4 +56,4 @@ print('60-70%: {}/{}'.format(percentage_nan(df_no_empty_nan_by_rows, min_percent
 print('70-80%: {}/{}'.format(percentage_nan(df_no_empty_nan_by_rows, min_percentage=70, max_percentage=80, whole=max_columns), max_rows))
 print('80-90%: {}/{}'.format(percentage_nan(df_no_empty_nan_by_rows, min_percentage=80, max_percentage=90, whole=max_columns), max_rows))
 print('90-100%: {}/{}'.format(percentage_nan(df_no_empty_nan_by_rows, min_percentage=90, max_percentage=100, whole=max_columns), max_rows))
-df_no_empty.to_csv(constants.CLUSTER_OUT + 'no_empty_150.csv', index=False, header=False, encoding='UTF-8')
+df_no_empty.to_csv(constants.CLUSTER_OUT + 'no_empty_150.csv', index=False, encoding='UTF-8')

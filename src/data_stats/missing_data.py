@@ -10,7 +10,7 @@ def percentage_nan_equals(dataframe, max_rows=150, equal_percentage=100):
     return (equal_percentage == calc_util.percentage(dataframe, max_rows)).sum()
 
 
-df = data_util.get_dataframe(constants.DATA + 'original_with_headers_150.csv', header=0)
+df = data_util.get_dataframe(constants.DATA + 'no_empty_h_150.csv', header=0)
 max_columns = df.shape[1]
 max_rows = df.shape[0]
 overall = max_columns * max_rows
@@ -30,7 +30,7 @@ df_no_empty_nan_by_column = df_no_empty.isnull().sum()
 
 print('nan by columns:')
 print('-------------------------------------------')
-print('0-5%: {}/{}'.format(percentage_nan(df_no_empty_nan_by_column, min_percentage=0, max_percentage=5) + 101, max_columns))
+print('0-5%: {}/{}'.format(percentage_nan(df_no_empty_nan_by_column, min_percentage=0, max_percentage=5) + 124, max_columns))
 print('5-10%: {}/{}'.format(percentage_nan(df_no_empty_nan_by_column, min_percentage=5, max_percentage=10), max_columns))
 print('10-20%: {}/{}'.format(percentage_nan(df_no_empty_nan_by_column, min_percentage=10, max_percentage=20), max_columns))
 print('20-30%: {}/{}'.format(percentage_nan(df_no_empty_nan_by_column, min_percentage=20, max_percentage=30), max_columns))
@@ -54,6 +54,5 @@ print('40-50%: {}/{}'.format(percentage_nan(df_no_empty_nan_by_rows, min_percent
 print('50-60%: {}/{}'.format(percentage_nan(df_no_empty_nan_by_rows, min_percentage=50, max_percentage=60, whole=max_columns), max_rows))
 print('60-70%: {}/{}'.format(percentage_nan(df_no_empty_nan_by_rows, min_percentage=60, max_percentage=70, whole=max_columns), max_rows))
 print('70-80%: {}/{}'.format(percentage_nan(df_no_empty_nan_by_rows, min_percentage=70, max_percentage=80, whole=max_columns), max_rows))
-print('80-90%: {}/{}'.format(percentage_nan(df_no_empty_nan_by_rows, min_percentage=80, max_percentage=90, whole=max_columns), max_rows))
+print('80-90%: {}/{}'.format(percentage_nan(df_no_empty_nan_by_rows, min_percentage=80, ma_percentage=90, whole=max_columns), max_rows))
 print('90-100%: {}/{}'.format(percentage_nan(df_no_empty_nan_by_rows, min_percentage=90, max_percentage=100, whole=max_columns), max_rows))
-df_no_empty.to_csv(constants.CLUSTER_OUT + 'no_empty_150.csv', index=False, encoding='UTF-8')

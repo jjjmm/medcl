@@ -19,22 +19,38 @@ def get_dates_from_column(column):
     return dates
 
 
-def get_column_dates_stats(dataframe, min_percentage, max_percentage):
-    print('{}% - {}%'.format(min_percentage, max_percentage))
+def get_column_dates_stats(dataframe, min_percentage, max_percentage, verbose=True):
+    columns = []
+    if (verbose):
+        print('{}% - {}%'.format(min_percentage, max_percentage))
     for column in dataframe:
         column_dates = get_dates_from_column(dataframe[column])
         dates_len = len(column_dates)
         col_len = len(dataframe[column])
         date_of_col_percentage = calc_util.percentage(dates_len, col_len)
         if dates_len != 0:
-            text = '{}/{} ({}%) - {}'.format(dates_len, col_len, round(date_of_col_percentage, 2), column)
             if min_percentage <= date_of_col_percentage < max_percentage:
-                print(text)
+                if verbose:
+                    text = '{}/{} ({}%) - {}'.format(dates_len, col_len, round(date_of_col_percentage, 2), column)
+                    print(text)
+                columns.append(column)
+    return columns
+
+
+def dates_to_bool(dataframe, columns):
+    for column in columns:
+        print(column)
+        dataframe[column] = dataframe[column].map(lambda v: is_string_and_date(v))
+    return dataframe
+
+
+def is_string_and_date(v):
+    if isinstance(v, str) and is_date(v):
+        return 't'
+    return 'f'
 
 
 df = data_util.get_dataframe(constants.DATA + 'no_empty_h_150.csv')
-
-get_column_dates_stats(df, 0, 5)
-get_column_dates_stats(df, 5, 10)
-get_column_dates_stats(df, 10, 30)
-get_column_dates_stats(df, 30, 100)
+date_columns = get_column_dates_stats(df, 0, 10, False)
+dates_0_10_as_bool_150 = dates_to_bool(df, date_columns)
+dates_0_10_as_bool_150.to_csv(constants.DATA + 'dates_0_10_as_bool_150.csv', index=False, encoding='UTF-8')

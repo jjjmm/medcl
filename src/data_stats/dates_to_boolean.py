@@ -1,30 +1,12 @@
-from src.util import data_util, calc_util, constants
-import datetime
-
-
-def is_date(string):
-    try:
-        datetime.datetime.strptime(string, '%Y-%m-%d')
-        return True
-    except ValueError:
-        return False
-
-
-def get_dates_from_column(column):
-    dates = []
-    for value in column:
-        if isinstance(value, str):
-            if is_date(value):
-                dates.append(value)
-    return dates
+from src.util import data_util, calc_util, constants, date_util
 
 
 def get_column_dates_stats(dataframe, min_percentage, max_percentage, verbose=True):
     columns = []
-    if (verbose):
+    if verbose:
         print('{}% - {}%'.format(min_percentage, max_percentage))
     for column in dataframe:
-        column_dates = get_dates_from_column(dataframe[column])
+        column_dates = date_util.get_dates_from_column(dataframe[column])
         dates_len = len(column_dates)
         col_len = len(dataframe[column])
         date_of_col_percentage = calc_util.percentage(dates_len, col_len)
@@ -45,7 +27,7 @@ def dates_to_bool(dataframe, columns):
 
 
 def is_string_and_date(v):
-    if isinstance(v, str) and is_date(v):
+    if isinstance(v, str) and date_util.is_date(v):
         return 't'
     return 'f'
 

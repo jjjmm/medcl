@@ -52,4 +52,4 @@ diss_matrix = [[0, 0.255, 0.505, 0.625, 0.87],
                [0.87, 0.435, 0.64, 0.4, 0.]]
 
 ordered_diss_matrix = order(diss_matrix)
-heatmap(diss_matrix, constants.CLUSTER_OUT + 'ordered_diss_heatmap')
+heatmap(ordered_diss_matrix, constants.CLUSTER_OUT + 'ordered_diss_heatmap')

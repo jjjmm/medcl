@@ -6,6 +6,9 @@ from src.util import constants
 
 
 def order(diss_matrix):
+    """VAT: A Tool for Visual Assessment of (Cluster) Tendency. J.C. Bezdek, R.J. Hathaway
+    dissimilarity matrix ordering algorithm implementation"""
+
     dm = np.matrix(diss_matrix)
     K = list(range(0, np.shape(dm)[0]))
     J = list(range(0, np.shape(dm)[0]))
@@ -43,10 +46,10 @@ def heatmap(diss_matrix, path):
 
 
 diss_matrix = [[0, 0.255, 0.505, 0.625, 0.87],
-      [0.255, 0., 0.725, 0.715, 0.435],
-      [0.505, 0.725, 0., 0.785, 0.64],
-      [0.625, 0.715, 0.785, 0., 0.4],
-      [0.87, 0.435, 0.64, 0.4, 0.]]
+               [0.255, 0., 0.725, 0.715, 0.435],
+               [0.505, 0.725, 0., 0.785, 0.64],
+               [0.625, 0.715, 0.785, 0., 0.4],
+               [0.87, 0.435, 0.64, 0.4, 0.]]
 
 ordered_diss_matrix = order(diss_matrix)
 heatmap(diss_matrix, constants.CLUSTER_OUT + 'ordered_diss_heatmap')

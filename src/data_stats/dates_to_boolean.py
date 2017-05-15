@@ -33,6 +33,6 @@ def is_string_and_date(v):
 
 
 df = data_util.get_dataframe(constants.DATA + 'no_empty_h_150.csv')
-date_columns = get_column_dates_stats(df, 0, 10, False)
+date_columns = get_column_dates_stats(df, 0, 100, False)
 dates_0_10_as_bool_150 = dates_to_bool(df, date_columns)
-dates_0_10_as_bool_150.to_csv(constants.DATA + 'dates_0_10_as_bool_150.csv', index=False, encoding='UTF-8')
+dates_0_10_as_bool_150.to_csv(constants.DATA + 'dates_0_100_as_bool_150.csv', index=False, encoding='UTF-8')

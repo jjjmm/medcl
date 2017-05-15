@@ -1,9 +1,11 @@
 import numpy as np
 import pandas as pd
 import scipy.stats as ss
+import seaborn as sns
+from src.util import constants
+import matplotlib.pyplot as plt
 
 
-# todo add min 5 rule
 def cramers_stat(confusion_matrix):
     if confusion_matrix.size != 0:
         chi2 = ss.chi2_contingency(confusion_matrix)[0]
@@ -27,8 +29,9 @@ def get_column_pairs_by_cramers_coef(dataframe, min_coef=0, max_coef=1, verbose=
     return result
 
 
-def get_column_pairs_by_cramers_coef_opt(dataframe, min_coef=0, max_coef=1, verbose=True):
+def get_column_pairs_by_cramers_coef_opt(dataframe, min_coef=0, max_coef=1, verbose=False):
     result = []
+
     df_matrix = dataframe.T.as_matrix()
     for x_idx, x_column in enumerate(df_matrix):
         print('------------------------' + str(x_idx) + '------------------------')
@@ -43,4 +46,21 @@ def get_column_pairs_by_cramers_coef_opt(dataframe, min_coef=0, max_coef=1, verb
                         result.append([x_column_name, y_column_name])
                     if verbose:
                         print('{}) {}-{} : {}'.format(len(result), x_column_name, y_column_name, cramers_coef))
+    return result
+
+
+def get_column_pairs_by_cramers_coef_opt_table(dataframe):
+    result = []
+    df_matrix = dataframe.T.as_matrix()
+    for x_idx, x_column in enumerate(df_matrix):
+        print(x_idx)
+        row = []
+        for y_idx, y_column in enumerate(df_matrix):
+            confusion_matrix = pd.crosstab(x_column, y_column)
+            cramers_coef = cramers_stat(confusion_matrix.as_matrix())
+            row.append(cramers_coef)
+        result.append(row)
+    fig, ax = plt.subplots()
+    ax = sns.heatmap(result)
+    fig.savefig(constants.DATA + 'heatmap_with_allsame')
     return result

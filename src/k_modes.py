@@ -1,9 +1,8 @@
 from kmodes import kmodes
-from termcolor import colored
 
 
 def k_modes(cluster_amount, data):
-    km = kmodes.KModes(n_clusters=cluster_amount, init='Huang', n_init=50, verbose=0)
+    km = kmodes.KModes(n_clusters=cluster_amount, init='Huang', n_init=10, verbose=0)
     return km.fit(data)
 
 
@@ -25,7 +24,4 @@ def k_modes_dict(cluster_amount, dataframe):
     return as_dict(dataframe.as_matrix(), clusters.labels_, cluster_amount)
 
 
-def log_k_modes_stats(k_modes_cluster_dict):
-    print(colored('k-modes stats:', 'green'))
-    for key, value in k_modes_cluster_dict.items():
-        print('cluster {} contains {} data points'.format(str(key), len(value)))
+

@@ -1,0 +1,8 @@
+OperatsioonAks oaProxV,OperatsioonAks oaKonduiitV
+OperatsioonAks oaKonduiitV,OperatsioonAks oaDistV
+OperatsioonAks oaEndarterektoomia code,OperatsioonAks oaEndarterektoomia name
+OperatsioonAks oaT2ielikRevaskularisatsioon code,OperatsioonAks oaT2ielikRevaskularisatsioon name
+OperatsioonAks oaKordusProxIV,OperatsioonAks oaKordusDistIV
+OperatsioonAks oaKordusKonduiitIV,OperatsioonAks oaKordusDistIV
+OperatsioonAks oaTehnika code,OperatsioonAks oaTehnika name
+OperatsioonAks osRingeAeg,OperatsioonAks oaKlemmiAeg

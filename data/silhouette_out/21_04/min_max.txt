@@ -1,0 +1,150 @@
+--------------------------------------------------
+min: 0.217 - DiagnostikaEkgLaborEhhoMri delemKiirabi, SeisundV2ljakirjutamisel svIntensiivArv, SeisundV2ljakirjutamisel svKopsuInf code
+max: 0.466 - SeisundV2ljakirjutamisel svSurm code, DiagnostikaEkgLaborEhhoMri delemBbbKpv, SeisundV2ljakirjutamisel svInfektsiooPindmineKpv
+--------------------------------------------------
+min: 0.117 - OperatsioonAks oaSuntideSeisund1O, SeisundV2ljakirjutamisel svSurm code, Riskifaktorid rfHypertoonia code
+max: 0.508 - VarasemadKardivaskulaarsed vkhAjuvereringeh2ired code, DiagnostikaEkgLaborEhhoMri delemAsKerge, VarasemadKardivaskulaarsed vkhKOK code
+--------------------------------------------------
+min: 0.201 - OperatsioonAks oaSuntideSeisund1O, SeisundV2ljakirjutamisel svFaX5min code, DiagnostikaEkgLaborEhhoMri delemAiKerge
+max: 0.498 - DH dhHospitaliseerimine code, SeisundV2ljakirjutamisel svHemostaatikumideKasutamine code, SeisundV2ljakirjutamisel svHemostaatikumideKasutamine code
+--------------------------------------------------
+min: 0.176 - OperatsioonAks oaSuntideSeisund1L, SeisundV2ljakirjutamisel svHemostaatikumideKasutamineKpv, DiagnostikaEkgLaborEhhoMri delemVasVentrikl code
+max: 0.564 - SeisundV2ljakirjutamisel svSKGKpv, SeisundV2ljakirjutamisel svInfarkt code, SeisundV2ljakirjutamisel svTroponiinIIKpv
+--------------------------------------------------
+min: 0.259 - VarasemadKardivaskulaarsed vkhInfarktP6etud code, SeisundV2ljakirjutamisel svHingamispuudulikkus code, OperatsioonAks oaSuntideSeisund2L
+max: 0.486 - VarasemadKardivaskulaarsed vkhVarasemSkgKpvIII, OperatsioonAks oaSuntideSeisund3A, VarasemadKardivaskulaarsed vkhInsultJahEi code
+--------------------------------------------------
+min: 0.098 - COUNT(RkFaas code), DiagnostikaEkgLaborEhhoMri delemAsEi, SeisundV2ljakirjutamisel svHaiglap2evadeArv
+max: 0.484 - SeisundV2ljakirjutamisel svKopsuInfKpv, CONCATSTR(Revasc code), DiagnostikaEkgLaborEhhoMri delemBbbKpv
+--------------------------------------------------
+min: 0.067 - DiagnostikaEkgLaborEhhoMri delemAsEi, Trial uuringuAasta, DH dhVanus
+max: 0.462 - DiagnostikaEkgLaborEhhoMri delemMri code, OperatsioonAks oaSuntideSeisund1L, OperatsioonAks oaSuntideSeisund5O
+--------------------------------------------------
+min: 0.29 - SeisundV2ljakirjutamisel svInfarkt code, COUNT(RkFaas code), SKG skgKahjustatudArteriteArv code
+max: 0.5 - COUNT(RkFaas code), ReperfusioonraviPlaneerimine rpAks, OperatsioonAks oaSuntideSeisund5A
+--------------------------------------------------
+min: 0.172 - DiagnostikaEkgLaborEhhoMri delemMri code, Trial uuringuNr, DiagnostikaEkgLaborEhhoMri delemVasVentrikl code
+max: 0.544 - DiagnostikaEkgLaborEhhoMri delemAsM66dukas, SeisundV2ljakirjutamisel svKopsuInf code, SeisundV2ljakirjutamisel svInfarktKpv
+--------------------------------------------------
+min: 0.379 - DiagnostikaEkgLaborEhhoMri delemAiKerge, DiagnostikaEkgLaborEhhoMri delemBbbKpv, COUNT(Kliinik name)
+max: 0.5 - Riskifaktorid rfNeerupuudulikus code, OperatsioonAks oaLm, ReperfusioonraviPlaneerimine rpAks
+--------------------------------------------------
+min: 0.086 - DiagnostikaEkgLaborEhhoMri delemMrEi, Trial uuringuAasta, SeisundV2ljakirjutamisel svInfarkt code
+max: 0.47 - DiagnostikaEkgLaborEhhoMri delemMrM66dukas, DiagnostikaEkgLaborEhhoMri delemAsM66dukasRaske, SeisundV2ljakirjutamisel svKopsuInf code
+--------------------------------------------------
+min: 0.013 - DiagnostikaEkgLaborEhhoMri delemMri code, DH dhVanus, OperatsioonAks oaL6ikuseKestvus
+max: 0.531 - VarasemadKardivaskulaarsed vkhAjuvereringeh2ired code, SeisundV2ljakirjutamisel svKopsuInfKpv, CONCATSTR(Revasc code)
+--------------------------------------------------
+min: 0.372 - DiagnostikaEkgLaborEhhoMri delemAsKerge, DiagnostikaEkgLaborEhhoMri delemAiKerge, OperatsioonAks oaSuntideSeisund1O
+max: 0.496 - ReperfusioonraviPlaneerimine rpAksKpv, Riskifaktorid rfHypertoonia code, COUNT(RkFaas code)
+--------------------------------------------------
+min: 0.27 - DH dhRahvus code, Riskifaktorid rfHypertoonia code, SeisundV2ljakirjutamisel svIntensiivArv
+max: 0.466 - VarasemadKardivaskulaarsed vkhFAJahEi code, VarasemadKardivaskulaarsed vkhKOK code, SeisundV2ljakirjutamisel svSKGKpv
+--------------------------------------------------
+min: 0.109 - SeisundV2ljakirjutamisel svSurm code, SKG skg2ksJahEi code, VarasemadKardivaskulaarsed vkhPacemakerKpv
+max: 0.504 - SeisundV2ljakirjutamisel svInfarkt code, SeisundV2ljakirjutamisel svUusAnginaKpv, DiagnostikaEkgLaborEhhoMri delemMedAsutusKpv
+--------------------------------------------------
+min: 0.299 - SKG skgUuringud code, Riskifaktorid rfDiabeet code, SeisundV2ljakirjutamisel svSurm code
+max: 0.492 - SeisundV2ljakirjutamisel svUusAngina code, COUNT(RkFaas code), VarasemadKardivaskulaarsed vkhPacemakerKpv
+--------------------------------------------------
+min: 0.221 - VarasemadKardivaskulaarsed vkhVarasemCABG code, VarasemadKardivaskulaarsed vkhVarasemSkgKpvIII, OperatsioonAks oaSuntideArv
+max: 0.463 - SeisundV2ljakirjutamisel svHingamispuudulikkus code, OperatsioonAks oaSuntideSeisund5A, VarasemadKardivaskulaarsed vkhPacemakerKpv
+--------------------------------------------------
+min: 0.255 - OperatsioonAks oaSuntideArv, COUNT(RkFaas code), DiagnostikaEkgLaborEhhoMri delemKiirabi
+max: 0.474 - SeisundV2ljakirjutamisel svInsultKpv, OperatsioonAks oaSuntideSeisund3L, OperatsioonAks oaCheckI
+--------------------------------------------------
+min: 0.075 - OperatsioonAks oaSuntideSeisund2L, OperatsioonAks oaSuntideSeisund3O, SeisundV2ljakirjutamisel svSurm code
+max: 0.529 - DiagnostikaEkgLaborEhhoMri delemAiEi, DiagnostikaEkgLaborEhhoMri delemAiEi, SeisundV2ljakirjutamisel svHemostaatikumideKasutamine code
+--------------------------------------------------
+min: 0.24 - VarasemadKardivaskulaarsed vkhFAJahEi code, SeisundV2ljakirjutamisel svSurm code, OperatsioonAks oaT2ielikRevaskularisatsioon code
+max: 0.5 - COUNT(RkFaas code), SeisundV2ljakirjutamisel svKate code, SeisundV2ljakirjutamisel svTroponiinIIKpv
+--------------------------------------------------
+min: 0.293 - SeisundV2ljakirjutamisel svInfarkt code, DiagnostikaEkgLaborEhhoMri delemMrEi, VarasemadKardivaskulaarsed vkhFAJahEi code
+max: 0.587 - OperatsioonAks oaSuntideSeisund5O, OperatsioonAks oaTehnika code, OperatsioonAks oaLm
+--------------------------------------------------
+min: 0.083 - VarasemadKardivaskulaarsed vkhVarasemCABG code, SeisundV2ljakirjutamisel svInfarktKpv, SKG skg2ksJahEi code
+max: 0.485 - DiagnostikaEkgLaborEhhoMri delemMedAsutusKpv, VarasemadKardivaskulaarsed vkhPacemakerKpv, DiagnostikaEkgLaborEhhoMri delemAsKerge
+--------------------------------------------------
+min: 0.046 - SeisundV2ljakirjutamisel svSKG code, DH dhVanus, SeisundV2ljakirjutamisel svReperfusioonravi code
+max: 0.519 - DiagnostikaEkgLaborEhhoMri delemAiEi, DiagnostikaEkgLaborEhhoMri delemAiEi, SeisundV2ljakirjutamisel svCABGKpv
+--------------------------------------------------
+min: 0.073 - Trial uuringuNr, DiagnostikaEkgLaborEhhoMri delemAiEi, Trial uuringuAasta
+max: 0.475 - SeisundV2ljakirjutamisel svReperfusioonravi code, DiagnostikaEkgLaborEhhoMri delemAsEi, SeisundV2ljakirjutamisel svInsult code
+--------------------------------------------------
+min: 0.309 - SeisundV2ljakirjutamisel svUusAngina code, VarasemadKardivaskulaarsed vkhVarasemSydamePuudulikus code, OperatsioonAks oaT2ielikRevaskularisatsioon code
+max: 0.494 - VarasemadKardivaskulaarsed vkhVarasemPKI code, SeisundV2ljakirjutamisel svSyvaveeniTromboos code, SeisundV2ljakirjutamisel svPKI code
+--------------------------------------------------
+min: 0.031 - OperatsioonAks oaL6ikuseKestvus, DiagnostikaEkgLaborEhhoMri delemAsM66dukas, SeisundV2ljakirjutamisel svSKG code
+max: 0.485 - OperatsioonAks oaLm, SeisundV2ljakirjutamisel svUusAngina code, SKG skgLm
+--------------------------------------------------
+min: 0.047 - DiagnostikaEkgLaborEhhoMri delemMrM66dukas, VarasemadKardivaskulaarsed vkhNeerupuudulikkus code, OperatsioonAks oaL6ikuseKestvus
+max: 0.503 - OperatsioonAks oaSuntideSeisund2O, OperatsioonAks oaLm, DiagnostikaEkgLaborEhhoMri delemAsM66dukasRaske
+--------------------------------------------------
+min: 0.096 - SeisundV2ljakirjutamisel svHaiglap2evadeArv, DiagnostikaEkgLaborEhhoMri delemAsKerge, ReperfusioonraviPlaneerimine rpAksKpv
+max: 0.506 - VarasemadKardivaskulaarsed vkhPacemaker code, SeisundV2ljakirjutamisel svVerejooks code, VarasemadKardivaskulaarsed vkhFAJahEi code
+--------------------------------------------------
+min: 0.086 - SeisundV2ljakirjutamisel svCABG code, Trial uuringuNr, OperatsioonAks oaSuntideSeisund2L
+max: 0.5 - DiagnostikaEkgLaborEhhoMri delemMedAsutusKpv, ReperfusioonraviPlaneerimine rpAksKpv, VarasemadKardivaskulaarsed vkhVarasemSkgKpvIII
+--------------------------------------------------
+min: 0.306 - OperatsioonAks oaSuntideSeisund3L, DiagnostikaEkgLaborEhhoMri delemHaiglaVastuv6tt, SKG skgKahjustatudArteriteArv code
+max: 0.559 - DiagnostikaEkgLaborEhhoMri delemRytm code, DiagnostikaEkgLaborEhhoMri delemAsKerge, VarasemadKardivaskulaarsed vkhFAJahEi code
+--------------------------------------------------
+min: 0.248 - DiagnostikaEkgLaborEhhoMri delemRytm code, DH dhHospitaliseerimine code, SeisundV2ljakirjutamisel svTroponiinIIKpv
+max: 0.482 - SeisundV2ljakirjutamisel svInfektsiooPindmine code, DiagnostikaEkgLaborEhhoMri delemRytm code, DiagnostikaEkgLaborEhhoMri delemMri code
+--------------------------------------------------
+min: 0.264 - VarasemadKardivaskulaarsed vkhInsultJahEi code, VarasemadKardivaskulaarsed vkhVarasemSKG code, SeisundV2ljakirjutamisel svVerekaotus code
+max: 0.488 - DiagnostikaEkgLaborEhhoMri delemAsM66dukasRaske, SeisundV2ljakirjutamisel svUusAnginaKpv, DiagnostikaEkgLaborEhhoMri delemKiirabi
+--------------------------------------------------
+min: 0.329 - Trial uuringuAasta, SeisundV2ljakirjutamisel svVerejooksKpv, OperatsioonAks oaTehnika code
+max: 0.486 - OperatsioonAks oaSuntideSeisund5A, DiagnostikaEkgLaborEhhoMri delemKiirabi, OperatsioonAks oaTehnika code
+--------------------------------------------------
+min: 0.224 - OperatsioonAks oaTehnika code, OperatsioonAks oaSuntideSeisund3O, SKG skgKahjustatudArteriteArv code
+max: 0.58 - OperatsioonAks oaSuntideSeisund4L, VarasemadKardivaskulaarsed vkhPacemakerKpv, OperatsioonAks oaSuntideSeisund3A
+--------------------------------------------------
+min: 0.047 - ReperfusioonraviPlaneerimine rpAksKpv, DH dhVanus, Riskifaktorid rfNeerupuudulikus code
+max: 0.478 - SeisundV2ljakirjutamisel svInfektsiooPindmineKpv, SeisundV2ljakirjutamisel svSKGKpv, DH dhSugu code
+--------------------------------------------------
+min: 0.263 - VarasemadKardivaskulaarsed vkhInsultJahEi code, SeisundV2ljakirjutamisel svPKI code, SKG skgKahjustatudArteriteArv code
+max: 0.492 - SeisundV2ljakirjutamisel svUusAngina code, Riskifaktorid rfNeerupuudulikus code, SeisundV2ljakirjutamisel svPKI code
+--------------------------------------------------
+min: 0.29 - OperatsioonAks oaSuntideSeisund2A, SeisundV2ljakirjutamisel svHaiglap2evadeArv, OperatsioonAks oaSuntideSeisund1A
+max: 0.474 - DiagnostikaEkgLaborEhhoMri delemPerearst, OperatsioonAks oaSuntideSeisund3L, SeisundV2ljakirjutamisel svSyvaveeniTromboos code
+--------------------------------------------------
+min: 0.136 - DH dhHospitaliseerimine code, DH dhRahvus code, DiagnostikaEkgLaborEhhoMri delemVasVentrikl code
+max: 0.504 - DiagnostikaEkgLaborEhhoMri delemAsEi, DiagnostikaEkgLaborEhhoMri delemRytm code, SKG skgKomplikatsioonidJahEi code
+--------------------------------------------------
+min: 0.171 - OperatsioonAks oaSuntideSeisund1O, Riskifaktorid rfDiabeet code, DiagnostikaEkgLaborEhhoMri delemMrEi
+max: 0.471 - DiagnostikaEkgLaborEhhoMri delemMedAsutus, COUNT(RkFaas code), SeisundV2ljakirjutamisel svInsultKpv
+--------------------------------------------------
+min: 0.062 - Trial uuringuAasta, OperatsioonAks oaSuntideSeisund4O, SeisundV2ljakirjutamisel svHaiglap2evadeArv
+max: 0.5 - ReperfusioonraviPlaneerimine rpAksKpv, COUNT(RkFaas code), SKG skgKomplikatsioonidJahEi code
+--------------------------------------------------
+min: 0.306 - SeisundV2ljakirjutamisel svPKI code, OperatsioonAks oaSuntideSeisund1O, Trial uuringuAasta
+max: 0.513 - DiagnostikaEkgLaborEhhoMri delemBbbKpv, DiagnostikaEkgLaborEhhoMri delemAsEi, Surm sSurmaKpvPoleTeada
+--------------------------------------------------
+min: 0.03 - OperatsioonAks oaL6ikuseKestvus, OperatsioonAks oaSuntideSeisund3A, OperatsioonAks oaSuntideSeisund2L
+max: 0.484 - SeisundV2ljakirjutamisel svInfektsiooPindmineKpv, DiagnostikaEkgLaborEhhoMri delemAiKerge, OperatsioonAks oaTehnika code
+--------------------------------------------------
+min: 0.068 - DH dhHospitaliseerimine code, SeisundV2ljakirjutamisel svCABGKpv, SeisundV2ljakirjutamisel svHaiglap2evadeArv
+max: 0.484 - OperatsioonAks oaCheckI, OperatsioonAks oaSuntideSeisund5A, OperatsioonAks oaSuntideSeisund3A
+--------------------------------------------------
+min: 0.063 - SeisundV2ljakirjutamisel svSyvaveeniTromboos code, SeisundV2ljakirjutamisel svVerekaotus code, OperatsioonAks oaL6ikuseKestvus
+max: 0.651 - OperatsioonAks oaSuntideSeisund4L, DiagnostikaEkgLaborEhhoMri delemAsKerge, OperatsioonAks oaSuntideSeisund4L
+--------------------------------------------------
+min: 0.279 - OperatsioonAks oaSuntideSeisund2O, SeisundV2ljakirjutamisel svTropaniinIKpv, SeisundV2ljakirjutamisel svVerejooksKpv
+max: 0.511 - VarasemadKardivaskulaarsed vkhVarasemCABG code, DiagnostikaEkgLaborEhhoMri delemMrEi, DiagnostikaEkgLaborEhhoMri delemMrEi
+--------------------------------------------------
+min: 0.257 - OperatsioonAks oaSuntideSeisund1L, VarasemadKardivaskulaarsed vkhInfarktP6etud code, Trial uuringuNr
+max: 0.496 - ReperfusioonraviPlaneerimine rpAks, SeisundV2ljakirjutamisel svSKGKpv, SeisundV2ljakirjutamisel svInfektsiooPindmineKpv
+--------------------------------------------------
+min: 0.128 - SeisundV2ljakirjutamisel svInfarkt code, SeisundV2ljakirjutamisel svCABG code, Trial uuringuAasta
+max: 0.571 - SKG skgKomplikatsioonidJahEi code, DiagnostikaEkgLaborEhhoMri delemMri code, SeisundV2ljakirjutamisel svUusAngina code
+--------------------------------------------------
+min: 0.1 - VarasemadKardivaskulaarsed vkhAjuvereringeh2ired code, SeisundV2ljakirjutamisel svIntensiivArv, SeisundV2ljakirjutamisel svHaiglap2evadeArv
+max: 0.491 - SeisundV2ljakirjutamisel svInsult code, DiagnostikaEkgLaborEhhoMri delemMedAsutusKpv, SeisundV2ljakirjutamisel svTroponiinIIKpv
+--------------------------------------------------
+min: 0.271 - OperatsioonAks oaSuntideSeisund1A, SeisundV2ljakirjutamisel svHemostaatikumideKasutamine code, DiagnostikaEkgLaborEhhoMri delemVasVentrikl code
+max: 0.469 - SKG skgKomplikatsioonidJahEi code, SeisundV2ljakirjutamisel svKopsuInf code, SeisundV2ljakirjutamisel svPKI code
+--------------------------------------------------
+min: 0.288 - Riskifaktorid rfHypertoonia code, DiagnostikaEkgLaborEhhoMri delemAiEi, OperatsioonAks oaSuntideSeisund1O
+max: 0.572 - DiagnostikaEkgLaborEhhoMri delemAsKerge, DiagnostikaEkgLaborEhhoMri delemRytm code, DiagnostikaEkgLaborEhhoMri delemAsM66dukas

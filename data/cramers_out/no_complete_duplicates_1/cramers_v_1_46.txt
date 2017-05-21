@@ -1,0 +1,20 @@
+COUNT(Kliinik name),CONCATSTR(Kliinik name)
+CONCATSTR(Revasc code),COUNT(Revasc code)
+CONCATSTR(Revasc code),CONCATSTR(Revasc name)
+CONCATSTR(Revasc name),COUNT(Revasc code)
+DH dhSugu code,DH dhSugu name
+DH dhRahvus code,DH dhRahvus name
+DH dhHospitaliseerimine code,DH dhHospitaliseerimine name
+Riskifaktorid rfDiabeet code,Riskifaktorid rfDiabeet name
+Riskifaktorid rfDiabeetRavi code,Riskifaktorid rfDiabeetRavi name
+Riskifaktorid rfSuitsetamine code,Riskifaktorid rfSuitsetamine name
+Riskifaktorid rfHypertoonia code,Riskifaktorid rfHypertoonia name
+Riskifaktorid rfHyperlipideemia code,Riskifaktorid rfHyperlipideemia name
+Riskifaktorid rfNeerupuudulikus code,Riskifaktorid rfNeerupuudulikus name
+Riskifaktorid rfStress code,Riskifaktorid rfStress name
+Riskifaktorid rfP2rilikkus code,Riskifaktorid rfP2rilikkus name
+VarasemadKardivaskulaarsed vkhInfarktP6etud code,VarasemadKardivaskulaarsed vkhInfarktP6etud name
+VarasemadKardivaskulaarsed vkhVarasemSydamePuudulikus code,VarasemadKardivaskulaarsed vkhVarasemSydamePuudulikus name
+VarasemadKardivaskulaarsed vkhFA code,VarasemadKardivaskulaarsed vkhFA name
+VarasemadKardivaskulaarsed vkhInsultJahEi code,VarasemadKardivaskulaarsed vkhInsultJahEi name
+VarasemadKardivaskulaarsed vkhInsult code,VarasemadKardivaskulaarsed vkhInsult name

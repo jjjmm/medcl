@@ -1,0 +1,2 @@
+OperatsioonAks oaToetavRinge code,OperatsioonAks oaToetavRinge name
+OperatsioonAks oaKonversioon code,OperatsioonAks oaKonversioon name

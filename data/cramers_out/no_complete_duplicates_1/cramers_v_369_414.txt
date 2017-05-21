@@ -1,0 +1,63 @@
+Reoperatsioon roSaabumine,Reoperatsioon roEndarterektoomia code
+Reoperatsioon roSaabumine,Reoperatsioon roEndarterektoomia name
+Reoperatsioon roSaabumine,Reoperatsioon roKonduiitI
+Reoperatsioon roSaabumine,Reoperatsioon roProxII
+Reoperatsioon roSaabumine,Reoperatsioon roKonduiitII
+Reoperatsioon roSaabumine,Reoperatsioon roTabelVs1D
+Reoperatsioon roSaabumine,Reoperatsioon roTabelVs2P
+Reoperatsioon roOperatsioon,Reoperatsioon roPIsheemia code
+Reoperatsioon roOperatsioon,Reoperatsioon roPIsheemia name
+Reoperatsioon roOperatsioon,Reoperatsioon roPOmaArteriOklus code
+Reoperatsioon roOperatsioon,Reoperatsioon roPOmaArteriOklus name
+Reoperatsioon roOperatsioon,Reoperatsioon roPKlapiOperatsioon code
+Reoperatsioon roOperatsioon,Reoperatsioon roPKlapiOperatsioon name
+Reoperatsioon roOperatsioon,Reoperatsioon roPMuu code
+Reoperatsioon roOperatsioon,Reoperatsioon roPMuu name
+Reoperatsioon roOperatsioon,Reoperatsioon roEndarterektoomia code
+Reoperatsioon roOperatsioon,Reoperatsioon roEndarterektoomia name
+Reoperatsioon roOperatsioon,Reoperatsioon roKonduiitI
+Reoperatsioon roOperatsioon,Reoperatsioon roKonduiitII
+Reoperatsioon roOperatsioon,Reoperatsioon roDistII
+Reoperatsioon roLahkumine,Reoperatsioon roEndarterektoomia code
+Reoperatsioon roLahkumine,Reoperatsioon roEndarterektoomia name
+Reoperatsioon roTCab code,Reoperatsioon roOperatsioon
+Reoperatsioon roPIsheemia code,Reoperatsioon roPIsheemia name
+Reoperatsioon roPIsheemia code,Reoperatsioon roPKlapiOperatsioon code
+Reoperatsioon roPIsheemia code,Reoperatsioon roPKlapiOperatsioon name
+Reoperatsioon roPIsheemia name,Reoperatsioon roPKlapiOperatsioon code
+Reoperatsioon roPIsheemia name,Reoperatsioon roPKlapiOperatsioon name
+Reoperatsioon roPSundiKahjustus code,Reoperatsioon roOperatsioon
+Reoperatsioon roPSundiKahjustus name,Reoperatsioon roOperatsioon
+Reoperatsioon roPMuu code,Reoperatsioon roPMuu name
+Reoperatsioon roOdVanaSunt code,Reoperatsioon roSaabumine
+Reoperatsioon roOdVanaSunt code,Reoperatsioon roOperatsioon
+Reoperatsioon roOdVanaSunt code,Reoperatsioon roLahkumine
+Reoperatsioon roOdVanaSunt code,Reoperatsioon roOdUusSunt code
+Reoperatsioon roOdVanaSunt code,Reoperatsioon roOdUusSunt name
+Reoperatsioon roOdVanaSunt name,Reoperatsioon roSaabumine
+Reoperatsioon roOdVanaSunt name,Reoperatsioon roOperatsioon
+Reoperatsioon roOdVanaSunt name,Reoperatsioon roLahkumine
+Reoperatsioon roOdVanaSunt name,Reoperatsioon roOdUusSunt code
+Reoperatsioon roOdVanaSunt name,Reoperatsioon roOdUusSunt name
+Reoperatsioon roOdUusSunt code,Reoperatsioon roSaabumine
+Reoperatsioon roOdUusSunt code,Reoperatsioon roOperatsioon
+Reoperatsioon roOdUusSunt name,Reoperatsioon roSaabumine
+Reoperatsioon roOdUusSunt name,Reoperatsioon roOperatsioon
+Reoperatsioon roT2ielikRevaskulatsioon code,Reoperatsioon roT2ielikRevaskulatsioon name
+Reoperatsioon roDistI,Reoperatsioon roTabelVs2P
+Reoperatsioon roProxII,Reoperatsioon roOperatsioon
+Reoperatsioon roDistII,Reoperatsioon roSaabumine
+Reoperatsioon roProxIII,Reoperatsioon roSaabumine
+Reoperatsioon roProxIII,Reoperatsioon roOperatsioon
+Reoperatsioon roProxIII,Reoperatsioon roDistIII
+Reoperatsioon roKonduiitIII,Reoperatsioon roSaabumine
+Reoperatsioon roKonduiitIII,Reoperatsioon roOperatsioon
+Reoperatsioon roKonduiitIII,Reoperatsioon roDistIII
+Reoperatsioon roTabelVs1P,Reoperatsioon roLahkumine
+Reoperatsioon roTabelVs1K,Reoperatsioon roLahkumine
+Reoperatsioon roTabelVs1K,Reoperatsioon roTabelVs2P
+Reoperatsioon roTabelVs1D,Reoperatsioon roTabelVs2P
+Reoperatsioon roTabelVs2P,Reoperatsioon roOperatsioon
+Reoperatsioon roTabelVs2P,Reoperatsioon roLahkumine
+Reoperatsioon roTabelVs2P,Reoperatsioon roPSundiKahjustus code
+Reoperatsioon roTabelVs2P,Reoperatsioon roPSundiKahjustus name

@@ -1,0 +1,14 @@
+SKG skgUuringud code,SKG skgUuringud name
+SKG skg2ksJahEi code,SKG skg2ksJahEi name
+SKG skg2ksTyyp code,SKG skg2ksTyyp name
+SKG skgKomplikatsioonidJahEi code,SKG skgKomplikatsioonidJahEi name
+SKG skgKahjustatudArteriteArv code,SKG skgKahjustatudArteriteArv name
+ReperfusioonraviPlaneerimine rpAksKpv,OperatsioonAks oaUnaortic code
+ReperfusioonraviPlaneerimine rpAksKpv,OperatsioonAks oaUnaortic name
+OperatsioonAks oaToetavRinge code,OperatsioonAks oaToetavRinge name
+OperatsioonAks oaKonversioon code,OperatsioonAks oaKonversioon name
+OperatsioonAks oaUnaortic code,OperatsioonAks oaUnaortic name
+OperatsioonAks oaAordiOsalineKlemmimine code,OperatsioonAks oaAordiOsalineKlemmimine name
+OperatsioonAks oaIabp code,OperatsioonAks oaIabp name
+OperatsioonAks oaAordiKaltsinoos code,OperatsioonAks oaAordiKaltsinoos name
+OperatsioonAks oaProxI,OperatsioonAks oaKonduiitI

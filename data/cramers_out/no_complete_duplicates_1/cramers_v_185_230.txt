@@ -1,0 +1,9 @@
+OperatsioonAks oaToetavRinge code,OperatsioonAks oaToetavRinge name
+OperatsioonAks oaKonversioon code,OperatsioonAks oaKonversioon name
+OperatsioonAks oaAordiOsalineKlemmimine code,OperatsioonAks oaAordiOsalineKlemmimine name
+OperatsioonAks oaAordiKaltsinoos code,OperatsioonAks oaAordiKaltsinoos name
+OperatsioonAks oaProxI,OperatsioonAks oaKonduiitI
+OperatsioonAks oaProxV,OperatsioonAks oaKonduiitV
+OperatsioonAks oaDistV,OperatsioonAks oaKonduiitV
+OperatsioonAks oaEndarterektoomia code,OperatsioonAks oaEndarterektoomia name
+OperatsioonAks oaT2ielikRevaskularisatsioon code,OperatsioonAks oaT2ielikRevaskularisatsioon name

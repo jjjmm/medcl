@@ -1,0 +1,7 @@
+Reoperatsioon roDistI,Reoperatsioon roTabelUs7D
+Reoperatsioon roProxIII,Reoperatsioon roKonduiitIII
+Reoperatsioon roProxIII,Reoperatsioon roDistIII
+Reoperatsioon roKonduiitIII,Reoperatsioon roDistIII
+Reoperatsioon roTabelVs1P,Reoperatsioon roTabelVs1K
+Surm sSuriHaiglas code,Surm sSuriHaiglas name
+Surm sP6hjus code,Surm sP6hjus name

@@ -1,0 +1,6 @@
+OperatsioonAks oaKordusProxIV,OperatsioonAks oaKordusDistIV
+OperatsioonAks oaKordusKonduiitIV,OperatsioonAks oaKordusDistIV
+OperatsioonAks oaTehnika code,OperatsioonAks oaTehnika name
+OperatsioonAks oaLm,OperatsioonAks oaSuntideSeisund4L
+OperatsioonAks oaLm,OperatsioonAks oaSuntideSeisund5A
+SeisundV2ljakirjutamisel svSurm code,SeisundV2ljakirjutamisel svSurm name

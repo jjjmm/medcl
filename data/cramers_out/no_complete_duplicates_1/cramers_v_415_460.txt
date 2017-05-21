@@ -1,0 +1,4 @@
+Reoperatsioon roTabelVs3D,Reoperatsioon roTabelVs3P
+Reoperatsioon roTabelVs4P,Reoperatsioon roTabelVs4D
+Surm sSuriHaiglas code,Surm sSuriHaiglas name
+Surm sP6hjus code,Surm sP6hjus name

@@ -1,0 +1,13 @@
+DiagnostikaEkgLaborEhhoMri delemStemi code,DiagnostikaEkgLaborEhhoMri delemStemi name
+DiagnostikaEkgLaborEhhoMri delemYldhinnang code,DiagnostikaEkgLaborEhhoMri delemYldhinnang name
+DiagnostikaEkgLaborEhhoMri delemBbb code,DiagnostikaEkgLaborEhhoMri delemBbb name
+DiagnostikaEkgLaborEhhoMri delemVasVentrikl code,DiagnostikaEkgLaborEhhoMri delemVasVentrikl name
+COUNT(BbbT2psustus code),COUNT(BbbT2psustus name)
+COUNT(BbbT2psustus code),CONCATSTR(BbbT2psustus name)
+CONCATSTR(BbbT2psustus code),CONCATSTR(BbbT2psustus name)
+COUNT(BbbT2psustus name),CONCATSTR(BbbT2psustus name)
+SKG skgUuringud code,SKG skgUuringud name
+SKG skg2ksJahEi code,SKG skg2ksJahEi name
+SKG skg2ksTyyp code,SKG skg2ksTyyp name
+SKG skgKomplikatsioonidJahEi code,SKG skgKomplikatsioonidJahEi name
+SKG skgKahjustatudArteriteArv code,SKG skgKahjustatudArteriteArv name

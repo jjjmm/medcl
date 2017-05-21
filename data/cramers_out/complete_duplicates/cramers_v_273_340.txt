@@ -1,0 +1,10 @@
+OperatsioonAks oaAordiOsalineKlemmimine code,OperatsioonAks oaAordiOsalineKlemmimine name
+OperatsioonAks oaAordiKaltsinoos code,OperatsioonAks oaAordiKaltsinoos name
+OperatsioonAks oaProxI,OperatsioonAks oaKonduiitI
+OperatsioonAks oaProxV,OperatsioonAks oaKonduiitV
+OperatsioonAks oaDistV,OperatsioonAks oaKonduiitV
+OperatsioonAks oaEndarterektoomia code,OperatsioonAks oaEndarterektoomia name
+OperatsioonAks oaT2ielikRevaskularisatsioon code,OperatsioonAks oaT2ielikRevaskularisatsioon name
+OperatsioonAks oaKordusProxIV,OperatsioonAks oaKordusDistIV
+OperatsioonAks oaKordusKonduiitIV,OperatsioonAks oaKordusDistIV
+OperatsioonAks oaTehnika code,OperatsioonAks oaTehnika name

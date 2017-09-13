@@ -1,4 +1,4 @@
-### Proof of concept for clinical data analysis without domain knowledge (master's thesis)
+### clinical data analysis without domain knowledge (master's thesis)
 #
 #### Content:
 ##### Data cleaning
